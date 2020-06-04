@@ -1,0 +1,30 @@
+{
+  "gadiApp": {
+    "title": {
+      "home": {
+        "title": "Titles",
+        "createLabel": "Créer un nouveau Title",
+        "createOrEditLabel": "Créer ou éditer un Title",
+        "notFound": "Aucun Title trouvé"
+      },
+      "created": "Un nouveau Title a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Title avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Title avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Title {{ id }} ?"
+      },
+      "detail": {
+        "title": "Title"
+      },
+      "name": "Name",
+      "identifier": "Identifier",
+      "orderValue": "Order Value",
+      "defaultValue": "Default Value",
+      "active": "Active",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "updatedBy": "Updated By",
+      "updatedDate": "Updated Date"
+    }
+  }
+}

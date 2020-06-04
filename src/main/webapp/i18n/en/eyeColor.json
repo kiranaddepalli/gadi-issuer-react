@@ -1,0 +1,30 @@
+{
+  "gadiApp": {
+    "eyeColor": {
+      "home": {
+        "title": "Eye Colors",
+        "createLabel": "Create a new Eye Color",
+        "createOrEditLabel": "Create or edit a Eye Color",
+        "notFound": "No Eye Colors found"
+      },
+      "created": "A new Eye Color is created with identifier {{ param }}",
+      "updated": "A Eye Color is updated with identifier {{ param }}",
+      "deleted": "A Eye Color is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Eye Color {{ id }}?"
+      },
+      "detail": {
+        "title": "Eye Color"
+      },
+      "name": "Name",
+      "identifier": "Identifier",
+      "orderValue": "Order Value",
+      "defaultValue": "Default Value",
+      "active": "Active",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "updatedBy": "Updated By",
+      "updatedDate": "Updated Date"
+    }
+  }
+}

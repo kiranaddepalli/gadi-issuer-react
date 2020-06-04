@@ -1,0 +1,38 @@
+{
+  "gadiApp": {
+    "organization": {
+      "home": {
+        "title": "Organizations",
+        "createLabel": "Create a new Organization",
+        "createOrEditLabel": "Create or edit a Organization",
+        "notFound": "No Organizations found"
+      },
+      "created": "A new Organization is created with identifier {{ param }}",
+      "updated": "A Organization is updated with identifier {{ param }}",
+      "deleted": "A Organization is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Organization {{ id }}?"
+      },
+      "detail": {
+        "title": "Organization"
+      },
+      "name": "Name",
+      "identifier": "Identifier",
+      "businessName": "Business Name",
+      "dbaName": "Dba Name",
+      "fein": "Fein",
+      "startDate": "Start Date",
+      "active": "Active",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "updatedBy": "Updated By",
+      "updatedDate": "Updated Date",
+      "partyRole": "Party Role",
+      "incorporatedState": "Incorporated State",
+      "country": "Country",
+      "address": "Address",
+      "mainPhone": "Main Phone",
+      "secondaryPhone": "Secondary Phone"
+    }
+  }
+}

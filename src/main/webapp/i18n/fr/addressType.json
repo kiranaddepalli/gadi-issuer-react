@@ -1,0 +1,30 @@
+{
+  "gadiApp": {
+    "addressType": {
+      "home": {
+        "title": "AddressTypes",
+        "createLabel": "Créer un nouveau Address Type",
+        "createOrEditLabel": "Créer ou éditer un Address Type",
+        "notFound": "Aucun Address Type trouvé"
+      },
+      "created": "Un nouveau Address Type a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Address Type avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Address Type avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Address Type {{ id }} ?"
+      },
+      "detail": {
+        "title": "Address Type"
+      },
+      "name": "Name",
+      "identifier": "Identifier",
+      "orderValue": "Order Value",
+      "defaultValue": "Default Value",
+      "active": "Active",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "updatedBy": "Updated By",
+      "updatedDate": "Updated Date"
+    }
+  }
+}

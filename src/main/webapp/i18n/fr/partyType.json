@@ -1,0 +1,30 @@
+{
+  "gadiApp": {
+    "partyType": {
+      "home": {
+        "title": "PartyTypes",
+        "createLabel": "Créer un nouveau Party Type",
+        "createOrEditLabel": "Créer ou éditer un Party Type",
+        "notFound": "Aucun Party Type trouvé"
+      },
+      "created": "Un nouveau Party Type a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Party Type avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Party Type avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Party Type {{ id }} ?"
+      },
+      "detail": {
+        "title": "Party Type"
+      },
+      "name": "Name",
+      "identifier": "Identifier",
+      "orderValue": "Order Value",
+      "defaultValue": "Default Value",
+      "active": "Active",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "updatedBy": "Updated By",
+      "updatedDate": "Updated Date"
+    }
+  }
+}

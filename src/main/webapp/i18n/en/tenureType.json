@@ -1,0 +1,30 @@
+{
+  "gadiApp": {
+    "tenureType": {
+      "home": {
+        "title": "Tenure Types",
+        "createLabel": "Create a new Tenure Type",
+        "createOrEditLabel": "Create or edit a Tenure Type",
+        "notFound": "No Tenure Types found"
+      },
+      "created": "A new Tenure Type is created with identifier {{ param }}",
+      "updated": "A Tenure Type is updated with identifier {{ param }}",
+      "deleted": "A Tenure Type is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Tenure Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Tenure Type"
+      },
+      "name": "Name",
+      "identifier": "Identifier",
+      "orderValue": "Order Value",
+      "defaultValue": "Default Value",
+      "active": "Active",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "updatedBy": "Updated By",
+      "updatedDate": "Updated Date"
+    }
+  }
+}

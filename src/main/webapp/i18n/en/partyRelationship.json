@@ -1,0 +1,27 @@
+{
+  "gadiApp": {
+    "partyRelationship": {
+      "home": {
+        "title": "Party Relationships",
+        "createLabel": "Create a new Party Relationship",
+        "createOrEditLabel": "Create or edit a Party Relationship",
+        "notFound": "No Party Relationships found"
+      },
+      "created": "A new Party Relationship is created with identifier {{ param }}",
+      "updated": "A Party Relationship is updated with identifier {{ param }}",
+      "deleted": "A Party Relationship is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Party Relationship {{ id }}?"
+      },
+      "detail": {
+        "title": "Party Relationship"
+      },
+      "fromParty": "From Party",
+      "toParty": "To Party",
+      "fromDate": "From Date",
+      "partyRole": "Party Role",
+      "fromPartyType": "From Party Type",
+      "toPartyType": "To Party Type"
+    }
+  }
+}
