@@ -1,0 +1,30 @@
+{
+  "gadiApp": {
+    "suffix": {
+      "home": {
+        "title": "Suffixes",
+        "createLabel": "Créer un nouveau Suffix",
+        "createOrEditLabel": "Créer ou éditer un Suffix",
+        "notFound": "Aucun Suffix trouvé"
+      },
+      "created": "Un nouveau Suffix a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Suffix avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Suffix avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Suffix {{ id }} ?"
+      },
+      "detail": {
+        "title": "Suffix"
+      },
+      "name": "Name",
+      "identifier": "Identifier",
+      "orderValue": "Order Value",
+      "defaultValue": "Default Value",
+      "active": "Active",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "updatedBy": "Updated By",
+      "updatedDate": "Updated Date"
+    }
+  }
+}

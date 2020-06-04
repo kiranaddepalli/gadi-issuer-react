@@ -1,0 +1,61 @@
+{
+  "name": "PhoneNumber",
+  "fields": [
+    {
+      "fieldName": "countryCode",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "areaCode",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "phoneNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "extension",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedDate",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "phoneType",
+      "otherEntityRelationshipName": "phoneNumber",
+      "relationshipName": "phoneType",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200604145653",
+  "entityTableName": "phone_number",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["gadi"]
+}

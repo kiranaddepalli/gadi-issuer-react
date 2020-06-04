@@ -1,0 +1,30 @@
+{
+  "gadiApp": {
+    "emailType": {
+      "home": {
+        "title": "Email Types",
+        "createLabel": "Create a new Email Type",
+        "createOrEditLabel": "Create or edit a Email Type",
+        "notFound": "No Email Types found"
+      },
+      "created": "A new Email Type is created with identifier {{ param }}",
+      "updated": "A Email Type is updated with identifier {{ param }}",
+      "deleted": "A Email Type is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Email Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Email Type"
+      },
+      "name": "Name",
+      "identifier": "Identifier",
+      "orderValue": "Order Value",
+      "defaultValue": "Default Value",
+      "active": "Active",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "updatedBy": "Updated By",
+      "updatedDate": "Updated Date"
+    }
+  }
+}

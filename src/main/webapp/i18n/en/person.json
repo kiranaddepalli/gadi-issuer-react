@@ -1,0 +1,36 @@
+{
+  "gadiApp": {
+    "person": {
+      "home": {
+        "title": "People",
+        "createLabel": "Create a new Person",
+        "createOrEditLabel": "Create or edit a Person",
+        "notFound": "No People found"
+      },
+      "created": "A new Person is created with identifier {{ param }}",
+      "updated": "A Person is updated with identifier {{ param }}",
+      "deleted": "A Person is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Person {{ id }}?"
+      },
+      "detail": {
+        "title": "Person"
+      },
+      "name": "Name",
+      "identifier": "Identifier",
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "active": "Active",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "updatedBy": "Updated By",
+      "updatedDate": "Updated Date",
+      "address": "Address",
+      "homePhone": "Home Phone",
+      "workPhone": "Work Phone",
+      "mobilePhone": "Mobile Phone",
+      "email": "Email"
+    }
+  }
+}

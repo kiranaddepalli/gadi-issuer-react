@@ -1,0 +1,35 @@
+{
+  "gadiApp": {
+    "education": {
+      "home": {
+        "title": "Educations",
+        "createLabel": "Créer un nouveau Education",
+        "createOrEditLabel": "Créer ou éditer un Education",
+        "notFound": "Aucun Education trouvé"
+      },
+      "created": "Un nouveau Education a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Education avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Education avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Education {{ id }} ?"
+      },
+      "detail": {
+        "title": "Education"
+      },
+      "name": "Name",
+      "identifier": "Identifier",
+      "issuerIdentifier": "Issuer Identifier",
+      "issueDate": "Issue Date",
+      "expirationDate": "Expiration Date",
+      "completed": "Completed",
+      "start": "Start",
+      "end": "End",
+      "active": "Active",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "updatedBy": "Updated By",
+      "updatedDate": "Updated Date",
+      "tenure": "Tenure"
+    }
+  }
+}

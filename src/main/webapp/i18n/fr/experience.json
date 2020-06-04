@@ -1,0 +1,34 @@
+{
+  "gadiApp": {
+    "experience": {
+      "home": {
+        "title": "Experiences",
+        "createLabel": "Créer un nouveau Experience",
+        "createOrEditLabel": "Créer ou éditer un Experience",
+        "notFound": "Aucun Experience trouvé"
+      },
+      "created": "Un nouveau Experience a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Experience avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Experience avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Experience {{ id }} ?"
+      },
+      "detail": {
+        "title": "Experience"
+      },
+      "name": "Name",
+      "identifier": "Identifier",
+      "issuerIdentifier": "Issuer Identifier",
+      "issueDate": "Issue Date",
+      "expirationDate": "Expiration Date",
+      "title": "Title",
+      "start": "Start",
+      "end": "End",
+      "active": "Active",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "updatedBy": "Updated By",
+      "updatedDate": "Updated Date"
+    }
+  }
+}

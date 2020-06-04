@@ -1,0 +1,30 @@
+{
+  "gadiApp": {
+    "partyRole": {
+      "home": {
+        "title": "Party Roles",
+        "createLabel": "Create a new Party Role",
+        "createOrEditLabel": "Create or edit a Party Role",
+        "notFound": "No Party Roles found"
+      },
+      "created": "A new Party Role is created with identifier {{ param }}",
+      "updated": "A Party Role is updated with identifier {{ param }}",
+      "deleted": "A Party Role is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Party Role {{ id }}?"
+      },
+      "detail": {
+        "title": "Party Role"
+      },
+      "name": "Name",
+      "identifier": "Identifier",
+      "orderValue": "Order Value",
+      "defaultValue": "Default Value",
+      "active": "Active",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "updatedBy": "Updated By",
+      "updatedDate": "Updated Date"
+    }
+  }
+}

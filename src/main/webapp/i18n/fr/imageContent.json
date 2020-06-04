@@ -1,0 +1,33 @@
+{
+  "gadiApp": {
+    "imageContent": {
+      "home": {
+        "title": "ImageContents",
+        "createLabel": "Créer un nouveau Image Content",
+        "createOrEditLabel": "Créer ou éditer un Image Content",
+        "notFound": "Aucun Image Content trouvé"
+      },
+      "created": "Un nouveau Image Content a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Image Content avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Image Content avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Image Content {{ id }} ?"
+      },
+      "detail": {
+        "title": "Image Content"
+      },
+      "name": "Name",
+      "external": "External",
+      "imageUrl": "Image Url",
+      "size": "Size",
+      "keywords": "Keywords",
+      "content": "Content",
+      "active": "Active",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "updatedBy": "Updated By",
+      "updatedDate": "Updated Date",
+      "imageType": "Image Type"
+    }
+  }
+}

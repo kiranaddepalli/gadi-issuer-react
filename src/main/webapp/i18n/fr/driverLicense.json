@@ -1,0 +1,43 @@
+{
+  "gadiApp": {
+    "driverLicense": {
+      "home": {
+        "title": "DriverLicenses",
+        "createLabel": "Créer un nouveau Driver License",
+        "createOrEditLabel": "Créer ou éditer un Driver License",
+        "notFound": "Aucun Driver License trouvé"
+      },
+      "created": "Un nouveau Driver License a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Driver License avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Driver License avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Driver License {{ id }} ?"
+      },
+      "detail": {
+        "title": "Driver License"
+      },
+      "name": "Name",
+      "identifier": "Identifier",
+      "issuerIdentifier": "Issuer Identifier",
+      "issueDate": "Issue Date",
+      "expirationDate": "Expiration Date",
+      "classCode": "Class Code",
+      "birthDate": "Birth Date",
+      "heightFeet": "Height Feet",
+      "heightInches": "Height Inches",
+      "active": "Active",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "updatedBy": "Updated By",
+      "updatedDate": "Updated Date",
+      "address": "Address",
+      "gender": "Gender",
+      "eyeColor": "Eye Color",
+      "hairColor": "Hair Color",
+      "race": "Race",
+      "issuingState": "Issuing State",
+      "issuingCountry": "Issuing Country",
+      "holderImage": "Holder Image"
+    }
+  }
+}

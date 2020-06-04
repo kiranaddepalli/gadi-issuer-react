@@ -1,0 +1,96 @@
+{
+  "name": "Passport",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "identifier",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "issuerIdentifier",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "issueDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "expirationDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "classCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "birthDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "heightFeet",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "heightInches",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedDate",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "gender",
+      "otherEntityRelationshipName": "passport",
+      "relationshipName": "gender",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "country",
+      "otherEntityRelationshipName": "passport",
+      "relationshipName": "nationality",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "imageContent",
+      "otherEntityRelationshipName": "passport",
+      "relationshipName": "holderImage",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200604150453",
+  "entityTableName": "passport",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["gadi"]
+}

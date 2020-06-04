@@ -1,0 +1,30 @@
+{
+  "gadiApp": {
+    "imageType": {
+      "home": {
+        "title": "Image Types",
+        "createLabel": "Create a new Image Type",
+        "createOrEditLabel": "Create or edit a Image Type",
+        "notFound": "No Image Types found"
+      },
+      "created": "A new Image Type is created with identifier {{ param }}",
+      "updated": "A Image Type is updated with identifier {{ param }}",
+      "deleted": "A Image Type is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Image Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Image Type"
+      },
+      "name": "Name",
+      "mimeType": "Mime Type",
+      "orderValue": "Order Value",
+      "defaultValue": "Default Value",
+      "active": "Active",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "updatedBy": "Updated By",
+      "updatedDate": "Updated Date"
+    }
+  }
+}

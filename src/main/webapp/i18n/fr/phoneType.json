@@ -1,0 +1,30 @@
+{
+  "gadiApp": {
+    "phoneType": {
+      "home": {
+        "title": "PhoneTypes",
+        "createLabel": "Créer un nouveau Phone Type",
+        "createOrEditLabel": "Créer ou éditer un Phone Type",
+        "notFound": "Aucun Phone Type trouvé"
+      },
+      "created": "Un nouveau Phone Type a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Phone Type avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Phone Type avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Phone Type {{ id }} ?"
+      },
+      "detail": {
+        "title": "Phone Type"
+      },
+      "name": "Name",
+      "identifier": "Identifier",
+      "orderValue": "Order Value",
+      "defaultValue": "Default Value",
+      "active": "Active",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "updatedBy": "Updated By",
+      "updatedDate": "Updated Date"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "gadiApp": {
+    "hairColor": {
+      "home": {
+        "title": "Hair Colors",
+        "createLabel": "Create a new Hair Color",
+        "createOrEditLabel": "Create or edit a Hair Color",
+        "notFound": "No Hair Colors found"
+      },
+      "created": "A new Hair Color is created with identifier {{ param }}",
+      "updated": "A Hair Color is updated with identifier {{ param }}",
+      "deleted": "A Hair Color is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Hair Color {{ id }}?"
+      },
+      "detail": {
+        "title": "Hair Color"
+      },
+      "name": "Name",
+      "identifier": "Identifier",
+      "orderValue": "Order Value",
+      "defaultValue": "Default Value",
+      "active": "Active",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "updatedBy": "Updated By",
+      "updatedDate": "Updated Date"
+    }
+  }
+}

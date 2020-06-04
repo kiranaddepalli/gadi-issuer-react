@@ -1,0 +1,38 @@
+{
+  "gadiApp": {
+    "passport": {
+      "home": {
+        "title": "Passports",
+        "createLabel": "Create a new Passport",
+        "createOrEditLabel": "Create or edit a Passport",
+        "notFound": "No Passports found"
+      },
+      "created": "A new Passport is created with identifier {{ param }}",
+      "updated": "A Passport is updated with identifier {{ param }}",
+      "deleted": "A Passport is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Passport {{ id }}?"
+      },
+      "detail": {
+        "title": "Passport"
+      },
+      "name": "Name",
+      "identifier": "Identifier",
+      "issuerIdentifier": "Issuer Identifier",
+      "issueDate": "Issue Date",
+      "expirationDate": "Expiration Date",
+      "classCode": "Class Code",
+      "birthDate": "Birth Date",
+      "heightFeet": "Height Feet",
+      "heightInches": "Height Inches",
+      "active": "Active",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "updatedBy": "Updated By",
+      "updatedDate": "Updated Date",
+      "gender": "Gender",
+      "nationality": "Nationality",
+      "holderImage": "Holder Image"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "PartyRelationship",
+  "fields": [
+    {
+      "fieldName": "fromParty",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "toParty",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "fromDate",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "partyRole",
+      "otherEntityRelationshipName": "partyRelationship",
+      "relationshipName": "partyRole",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "partyType",
+      "otherEntityRelationshipName": "partyRelationship",
+      "relationshipName": "fromPartyType",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "partyType",
+      "otherEntityRelationshipName": "partyRelationship",
+      "relationshipName": "toPartyType",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200604150153",
+  "entityTableName": "party_relationship",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["gadi"]
+}
