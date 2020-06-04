@@ -1,0 +1,416 @@
+/** Monilith Application for reference */
+
+application {
+  config {
+    baseName gadi
+    applicationType gadi
+    packageName net.ditigaltrust.gadi.demo
+    serverPort 9011
+    authenticationType jwt
+    databaseType sql
+    devDatabaseType mariadb
+    prodDatabaseType mariadb
+    cacheProvider hazelcast
+    enableHibernateCache true
+    serviceDiscoveryType no
+    clientPackageManager yarn
+    useSass true
+    clientFramework react
+    skipServer true
+    enableSwaggerCodegen true
+    websocket spring-websocket
+    testFrameworks [cucumber, protractor]
+    buildTool maven
+    jhiPrefix dt
+  }
+  entities *
+}
+
+
+/*****  Common Entities ****/
+entity Address {
+    addressLine1 String,
+    addressLine2 String,
+    city String,
+    zipcode String,
+    latitude Double,
+    longitude Double,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+}
+
+entity PhoneNumber {
+	countryCode Integer,
+    areaCode Integer,
+    phoneNumber String,
+    extension Integer,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime    
+}
+
+entity Email {
+	address Integer,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime    
+}
+
+entity ImageContent {
+	name String,
+    external Boolean,
+    imageUrl String,
+    size Long,
+    keywords String, 
+    content ImageBlob,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime    
+}
+
+/*** Core Entities ****/
+
+
+entity Organization {
+	name String required,
+    identifier String,
+	businessName String required,
+    dbaName String,
+    fein String,
+    startDate ZonedDateTime,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime 
+}
+
+entity Person {
+	name String required,
+    identifier String,
+    firstName String required,
+    middleName String,
+    lastName String required,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime 
+}
+
+entity PartyRelationship {
+	fromParty Long,
+    toParty Long,
+    fromDate ZonedDateTime,
+    toParty ZonedDateTime
+}
+
+
+entity CredentialType {
+    name String required,
+    identifier String required,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+}
+
+entity DriverLicense {
+    name String required,
+	identifier String,
+	issuerIdentifier String,
+	issueDate ZonedDateTime,
+    expirationDate ZonedDateTime,
+	classCode String,
+	birthDate ZonedDateTime,
+    heightFeet Integer,
+    heightInches Integer,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+}
+
+entity Passport {
+    name String required,
+	identifier String,
+	issuerIdentifier String,
+	issueDate ZonedDateTime,
+    expirationDate ZonedDateTime,
+	classCode String,
+    birthDate ZonedDateTime,
+    heightFeet Integer,
+    heightInches Integer,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+
+}
+entity Education {
+    name String required,
+	identifier String,
+	issuerIdentifier String,
+	issueDate ZonedDateTime,
+    expirationDate ZonedDateTime,
+	completed Boolean,
+    start ZonedDateTime,
+    end ZonedDateTime,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+    
+}
+
+entity Experience {
+    name String required,
+	identifier String,
+	issuerIdentifier String,
+	issueDate ZonedDateTime,
+    expirationDate ZonedDateTime,
+	title String,
+    start ZonedDateTime,
+    end ZonedDateTime,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+    
+}
+
+/*****  Code lists *** */
+entity Country {
+    name String required,
+    identifier String,
+    orderValue Integer,
+    defaultValue Boolean,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+}
+
+entity State {
+    name String required,
+    identifier String,
+    orderValue Integer,
+    defaultValue Boolean,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+}
+
+entity AddressType {
+    name String required,
+    identifier String,
+    orderValue Integer,
+    defaultValue Boolean,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+}
+
+entity PhoneType {
+    name String required,
+    identifier String,
+    orderValue Integer,
+    defaultValue Boolean,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+}
+
+entity EmailType {
+    name String required,
+    identifier String,
+    orderValue Integer,
+    defaultValue Boolean,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+}
+
+entity PartyType {
+    name String required,
+    identifier String,
+    orderValue Integer,
+    defaultValue Boolean,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+}
+
+entity PartyRole {
+    name String required,
+    identifier String,
+    orderValue Integer,
+    defaultValue Boolean,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+}
+
+entity Title {
+    name String required,
+    identifier String,
+    orderValue Integer,
+    defaultValue Boolean,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+}
+entity Suffix {
+    name String required,
+    identifier String,
+    orderValue Integer,
+    defaultValue Boolean,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+}
+
+
+entity Gender {
+    name String required,
+    identifier String,
+    orderValue Integer,
+    defaultValue Boolean,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+}
+entity EyeColor {
+    name String required,
+    identifier String,
+    orderValue Integer,
+    defaultValue Boolean,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+}
+entity HairColor {
+    name String required,
+    identifier String,
+    orderValue Integer,
+    defaultValue Boolean,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+}
+entity Race {
+    name String required,
+    identifier String,
+    orderValue Integer,
+    defaultValue Boolean,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+}
+
+entity TenureType {
+    name String required,
+    identifier String,
+    orderValue Integer,
+    defaultValue Boolean,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+}
+entity ImageType {
+    name String required,
+    mimeType String,
+    orderValue Integer,
+    defaultValue Boolean,
+    active Boolean,
+    createdBy String,
+    createdDate ZonedDateTime,
+    updatedBy String,
+    updatedDate ZonedDateTime
+}
+
+
+relationship ManyToOne {
+	Country {state} to State,
+	Address {state} to State,
+    Address {addressType} to AddressType,
+    PhoneNumber {phoneType} to PhoneType,
+    Email {emailType} to EmailType,
+    
+    Organization {partyRole} to PartyRole,
+    Organization {incorporatedState} to State,
+    Organization {country} to Country,
+    Organization {address} to Address,
+    Organization {mainPhone} to PhoneNumber,
+    Organization {secondaryPhone} to PhoneNumber,
+    
+    Person {address} to Address,
+    Person {homePhone} to PhoneNumber,
+    Person {workPhone} to PhoneNumber,
+    Person {mobilePhone} to PhoneNumber,
+    Person {email} to Email,
+    
+    
+    PartyRelationship {partyRole} to PartyRole,
+    PartyRelationship {fromPartyType} to PartyType,
+    PartyRelationship {toPartyType} to PartyType,
+    
+   
+    DriverLicense {address} to Address,
+    DriverLicense {gender} to Gender,
+    DriverLicense {eyeColor} to EyeColor,
+    DriverLicense {hairColor} to HairColor,
+    DriverLicense {race} to Race,
+    DriverLicense {issuingState} to State,
+    DriverLicense {issuingCountry} to Country,
+    DriverLicense {holderImage} to ImageContent,
+    
+    Passport {gender} to Gender,
+    Passport {nationality} to Country,
+    Passport {holderImage} to ImageContent,
+    
+    Education {tenure} to TenureType,
+    ImageContent {imageType} to ImageType
+    
+    }
